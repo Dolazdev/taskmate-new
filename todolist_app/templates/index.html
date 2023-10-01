@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}
-    <title>Welcome to Taskmate!</title>
+    <title>Welcome to Task4U!</title>
 {% endblock title %}
 {% block content %}
     <div class="container">
@@ -10,10 +10,10 @@
                 <img src="{% static "images/stickynotes.jpg" %}" alt="Notes" class="rounded-2 shadow-sm " width="350" height="250">
             </div>
             <div class="col-lg-4 ">
-                <img src="{% static "images/stickynotes.jpg" %}" alt="Notes" class="rounded-2 shadow-sm " width="350" height="250">
+                <img src="{% static "images/stickynotes2.jpg" %}" alt="Notes" class="rounded-2 shadow-sm " width="350" height="250">
             </div>
             <div class="col-lg-4 ">
-                <img src="{% static "images/stickynotes.jpg" %}" alt="Notes" class="rounded-2 shadow-sm " width="350" height="250">
+                <img src="{% static "images/stickynotes3.jpg" %}" alt="Notes" class="rounded-2 shadow-sm " width="350" height="250">
             </div>
         </div>
         <div class="row mt-5">
@@ -25,13 +25,13 @@
                     <p class="h2 mt-3 ">"Plan Your Day Better, Get Your Life Organized"</p>
                 </center>
                 <center>
-                    <p class="h5">TASKMATE Lets You Keep Track Of Your Task In One Place</p>
+                    <p class="h5">Task4U Lets You Keep Track Of Your Task In One Place</p>
                 </center>
                 <center>
                     <a href="{% url 'todolist' %}">
-                        <button type="button" class="btn btn-primary btn-lg mt-3 shadow ">
+                        <button type="button" class="btn btn-primary btn-lg my-3 shadow ">
                             {% if user.is_authenticated %}
-                                Welcome Back, {{user.username}}
+                                Welcome Back, {{ user.username }}
                             {% else %}
                                 Let's Get Started
                             {% endif %}
